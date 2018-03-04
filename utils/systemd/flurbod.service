@@ -1,0 +1,21 @@
+[Unit]
+Description=Flurbo Full Node
+After=network.target
+
+[Service]
+User=flurbo
+Group=flurbo
+WorkingDirectory=~
+RuntimeDirectory=flurbo
+
+Type=forking
+PIDFile=/run/flurbo/flurbod.pid
+
+ExecStart=/usr/bin/flurbod --config-file /etc/flurbod.conf \
+    --detach --pidfile /run/flurbo/flurbod.pid
+
+Restart=always
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

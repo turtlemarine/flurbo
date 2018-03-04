@@ -1,0 +1,79 @@
+name: flurbo
+version: 0.11.1.0-1
+summary: "Flurbo: the secure, private, untraceable cryptocurrency https://getflurbo.org"
+description: |
+    Flurbo is a private, secure, untraceable, decentralised digital currency.
+    You are your bank, you control your funds, and nobody can trace your transfers
+    unless you allow them to do so.
+grade: devel
+confinement: strict
+
+apps:
+    flurbod:
+        daemon: forking
+        command: |
+          flurbod-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/flurbod.conf
+        plugs:
+            - network
+            - network-bind
+    flurbo-wallet-rpc:
+        command: |
+          flurbo-wallet-rpc --log-file ${SNAP_USER_DATA}
+        plugs:
+            - home
+            - network
+            - network-bind
+    flurbo-wallet-cli:
+        command: |
+          flurbo-wallet-cli --log-file ${SNAP_USER_DATA}
+        plugs:
+            - home
+            - network
+
+parts:
+    cmake-build:
+        plugin: cmake
+        configflags:
+            - -DBDB_STATIC=1
+            - -DUPNP_STATIC=1
+            - -DBoost_USE_STATIC_LIBS=1
+            - -DBoost_USE_STATIC_RUNTIME=1
+            - -DARCH=default
+        source: .
+        build-packages:
+            - gcc
+            - pkg-config
+            - libunbound-dev
+            - libevent-dev
+            - libboost-all-dev
+            - libzmqpp-dev
+            - libzmq3-dev
+            - libsodium-dev
+            - libdb-dev
+            - libunwind-dev
+            - libminiupnpc-dev
+            - libldns-dev
+            - libexpat1-dev
+            - libreadline6-dev
+            - bison
+            - doxygen
+            - graphviz
+        stage-packages:
+            - libminiupnpc10
+            - libunbound2
+            - libunwind8
+        prime:
+            - bin
+            - usr/lib/
+            - -usr/lib/gcc
+            - -usr/share
+
+    dist-files:
+        plugin: dump
+        source: .
+        organize:
+            contrib/snap/flurbod.conf: etc/flurbod.conf
+            contrib/snap/flurbod-wrapper: bin/flurbod-wrapper
+        prime:
+            - etc
+            - bin
