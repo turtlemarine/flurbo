@@ -9,15 +9,15 @@ Flurbo is the first private open-source intergalactic decentralized anonymous fr
 - [Telegram Group](https://t.me/flurbotalk)
 - [Telegram Channel](https://t.me/flurbo)
 
-## Mission
+# Mission
 
 Everyone want's extend life of "Rick and Morty" show for as long as possible and everyone want's see as much as possible seasons of it, as sooner as possible! We have a plan. The first step we take on ourselves, we created Flurbo currency and we will send a donation of 1,000,000,000 FLB to Dan Harmon and Justin Roiland. The second and most important step is entirely up to you. You ask how can you help? Just become a part of the Flurbo community and help it's grow! Let's make Flurbo great! Rikki-Tikki-Tavi, Bitch! Remember, it's all up to you and that's the waaaayyy the news goes! AIDS!
 
-## How to start use Flurbo?
+# How to start use Flurbo?
 
 You can download Linux or Windows binaries of "**Flurbo Wallet**" CLI or GUI from [Flurbo Download Page](http://flurbo.cc/#download) and that's why I always say "Shumshumschilpiddydah!".
 
-## Supporting the project
+# Supporting the project
 
 Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. All funds received will go to promote Flurbo and it's exchange rate. Bitcoin donations can be made to **http://flurbo.cc/#donate**.
 
@@ -31,9 +31,11 @@ See [LICENSE](LICENSE).
 
 If you want to help out or maybe became a part of Flurbo developers, write to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) for a set of guidelines.
 
-## Compiling Flurbo from source
+# Compiling Flurbo from source
 
-### Dependencies
+The following table summarizes the tools and libraries required to build. By default, the build uses the library installed on the system, and ignores the vendored sources. However, if no library is found installed on the system, then the vendored source will be built and used. The vendored sources are also used for statically-linked builds because distribution packages often include only shared library binaries (.so) but not static library archives (.a).
+
+## Dependencies
 
 | Dep          | Min. version  | Vendored | Debian/Ubuntu pkg  | Arch pkg     | Fedora            | Optional | Purpose        |
 | ------------ | ------------- | -------- | ------------------ | ------------ | ----------------- | -------- | -------------- |
@@ -55,12 +57,12 @@ If you want to help out or maybe became a part of Flurbo developers, write to [@
 | Doxygen      | any           | NO       | `doxygen`          | `doxygen`    | `doxygen`         | YES      | Documentation  |
 | Graphviz     | any           | NO       | `graphviz`         | `graphviz`   | `graphviz`        | YES      | Documentation  |
 
-### Build instructions
+## Build instructions
 
 Flurbo uses the CMake build system and a top-level [Makefile](Makefile)
 that invokes cmake commands as needed.
 
-#### On Linux and OS X
+### On Linux and OS X
 
 * Install the dependencies
 * Change to the root of the source code directory and build:
@@ -68,19 +70,14 @@ that invokes cmake commands as needed.
 cd flurbo
 make
 ```
-
 * The resulting executables can be found in "build/release/bin"
-
 * Add PATH="$PATH:$HOME/flurbo/build/release/bin" to ".profile"
-
 * Run Flurbo with "flurbod --detach"
-
 * **Optional**: build and run the test suite to verify the binaries:
 ```
 make release-test
 ```
 *NOTE*: "core_tests" test may take a few hours to complete.
-
 * **Optional**: to build binaries suitable for debugging:
 ```
 make debug
@@ -93,7 +90,7 @@ make release-static
 ```
 HAVE_DOT=YES doxygen Doxyfile
 ```
-#### On Windows:
+### On Windows:
 
 Binaries for Windows are built on Windows using the MinGW toolchain within
 [MSYS2 environment](http://msys2.github.io). The MSYS2 environment emulates a
@@ -118,10 +115,10 @@ pacman -Syuu
 * Install dependencies:
   To build for 64-bit Windows:
 ```
+# To build for 64-bit Window
 pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium
-```
-To build for 32-bit Windows:
-```
+
+#To build for 32-bit Windows:
 pacman -S mingw-w64-i686-toolchain make mingw-w64-i686-cmake mingw-w64-i686-boost mingw-w64-i686-openssl mingw-w64-i686-zeromq mingw-w64-i686-libsodium
 ```
 * Open the MingW shell via "MinGW-w64-Win64 Shell" shortcut on 64-bit Windows
@@ -140,10 +137,9 @@ make release-static-win32
 ```
 * The resulting executables can be found in "build/release/bin"
 
-### Building portable statically linked binaries
+#### Building portable statically linked binaries
 
 By default, in either dynamically or statically linked builds, binaries target the specific host processor on which the build happens and are not portable to other processors. Portable binaries can be built using the following targets:
-
 ```
 make release-static-linux-x86_64 - builds binaries on Linux on x86_64 portable across POSIX systems on x86_64 processors
 make release-static-linux-i686 - builds binaries on Linux on x86_64 or i686 portable across POSIX systems on i686 processors
