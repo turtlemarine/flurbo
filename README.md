@@ -1,4 +1,4 @@
-# Flurbo
+# The Flurbo Project
 
 Flurbo is the first private open-source intergalactic decentralized anonymous free crypto currency based on CryptoNote that is used by more than 84 alien species to easily send money online throughout the galaxy and all dimensions. Wubba Lubba Dub Dub!
 
@@ -19,7 +19,7 @@ You can download Linux or Windows binaries of "**Flurbo Wallet**" CLI or GUI fro
 
 ## Supporting the project
 
-Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts and help "The Flurbo Project" to grow, the easiest thing you can do is support the project financially. All funds received will go to promote Flurbo, make higher it's exchange rate and to pay all of necessary things, so if you make decision to send donation please write message to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) after that and you will be rewarded! You can use next Bitcoin address for donation:
+Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts and help "The Flurbo Project" to grow, the easiest thing you can do is support the project financially. All funds received will go to promote Flurbo, make higher it's exchange rate and to pay all of necessary things, like seed nodes, so if you make decision to send donation please write message to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) after that and you will be rewarded! You can use next Bitcoin address for donation:
 
 #### `      BTC: 3JxwkWq4uP7CaLXUDqwRwtj1kkKfxcXzF6      `
 
