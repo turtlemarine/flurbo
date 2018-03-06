@@ -17,7 +17,7 @@ Everyone want's extend life of "Rick and Morty" show for as long as possible and
 
 You can download Linux or Windows binaries of "**Flurbo Wallet**" CLI or GUI from [Flurbo Download Page](http://flurbo.cc/#download) and that's why I always say "Shumshumschilpiddydah!".
 
-### Supporting the project
+## Supporting the project
 
 Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. At now we accept only Bitcoin, so if you want to help "The Flurbo Project" grow - make any donation on next address:
 
