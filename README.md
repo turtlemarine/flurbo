@@ -21,7 +21,7 @@ You can download Linux or Windows binaries of "**Flurbo Wallet**" CLI or GUI fro
 
 Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. At now we accept only Bitcoin, so if you want to help "The Flurbo Project" grow - make any donation on next address:
 
-### `BTC: 3JxwkWq4uP7CaLXUDqwRwtj1kkKfxcXzF6`
+#### `BTC: 3JxwkWq4uP7CaLXUDqwRwtj1kkKfxcXzF6`
 
 All funds received will go to promote Flurbo, it's exchange rate and to pay all of necessary things. If you make decision to send donation please write message to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) and you will be rewarded!
 
