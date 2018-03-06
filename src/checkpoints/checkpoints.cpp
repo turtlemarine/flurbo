@@ -1,12 +1,12 @@
 // Get last updates on http://flurbo.cc
 //             ___ _  _ ____
-//              |  |--| |===                      
+//              |  |--| |===
 //  _____ __    _____ _____ _____ _____
 // |   __|  |  |  |  | __  | __  |     |
 // |   __|  |__|  |  |    -| __ -|  |  |
 // |__|  |_____|_____|__|__|_____|_____|
 //   ___  ____ ____    _ ____ ____ ___
-//   |--' |--< [__] ___| |=== |___  | 
+//   |--' |--< [__] ___| |=== |___  |
 //
 // Based on "The Monero Project" and "Cryptonote Protocol".
 //
@@ -179,7 +179,33 @@ namespace cryptonote
       ADD_CHECKPOINT(1000000, "46b690b710a07ea051bc4a6b6842ac37be691089c0f7758cfeec4d5fc0b4a258");
       return true;
     }
-    ADD_CHECKPOINT(10000, "c758b7c81f928be3295d45e230646de8b852ec96a821eac3fea4daf3fcac0ca2");
+    ADD_CHECKPOINT(0, "07ea79d1bfc623fcb1544f64915ce522b736eef47154d2b7a816ed992f3b5caa");
+    ADD_CHECKPOINT(10, "ad221cf246115c0b152b26ddd83ea350c0ccdd2d41e192486eac684ffc81a7b1");
+    ADD_CHECKPOINT(100, "c33b39fef3d706825cb9326f8b86c38eb112f0c5220f9275f34f9280df20886b");
+    ADD_CHECKPOINT(200, "d1b045c90888642224783a4d4892ab7427bc653363e20c5a9861f735cbc1cf62");
+    ADD_CHECKPOINT(300, "fa54c5ec2cd30a50ba822c6fc564779069235a2daecba471be1a319bf1ed9935");
+    ADD_CHECKPOINT(400, "edd072f4eca38a219559d2719d5eeea3e14b17d100ea029b3a3995d79ca40277");
+    ADD_CHECKPOINT(500, "e6d7702e38a53f39352f84bf567ea23d3e4f261f543c8d0360769412e4a4479b");
+    ADD_CHECKPOINT(600, "6ab40fb1b9a7c2e7c1d596d6b99d821a81d1b888ce38db746b2a62663c46ebdd");
+    ADD_CHECKPOINT(700, "2f803686c0d7192c6b685a4267f5e74f3beb75024c5d796fc176acbd93f8d3fc");
+    ADD_CHECKPOINT(800, "d6f839d24b1d6c36cce2785a1bf92a07514481bb2a2cdef04766af65c266e21a");
+    ADD_CHECKPOINT(900, "6c185ed30533b9a60569e331d6ea508bf942c485e346d934359c371189c5a52d");
+    ADD_CHECKPOINT(1000, "20ff312e33d2b25dbb6efd989f01e7ded5faba4a44245080fc63a82ad1da0c6a");
+    ADD_CHECKPOINT(1100, "8c19a6dc7d14de81c20d0d81c3df32cdde1b0804dba874a54fe5b7b7e3c32605");
+    ADD_CHECKPOINT(1200, "5bdcf62954950be1fa4106062c8c84fc2c256c0666c5914e1f6d892931e3bf70");
+    ADD_CHECKPOINT(1300, "fbdcfb2c3ff86cf616ccaba841bf1e94bb3b7b36bcec4785cdee39a1e9ba549c");
+    ADD_CHECKPOINT(1400, "8e2ad062218ebb8d4e54a647cef958add29ae13b084c1a6eaf40f7403e3a8fb0");
+    ADD_CHECKPOINT(1500, "dd9fab412ae181dca62e398cdec51a2c6014c7b237f246892dee4faac9fad05a");
+    ADD_CHECKPOINT(1600, "ca67884a2b53b7026c04fc0a332d6c671dbcc000f6cc2baf2a8b0dee6da7b14c");
+    ADD_CHECKPOINT(1700, "0ba79b6b0cf3ca370581f2371d50b99c1a91a2643591b774a9bfdfee9ee71a9c");
+    ADD_CHECKPOINT(1800, "94d26312c9980dfd8b4b4e2bef724442567c4c89ff5e5518010f66895532a799");
+    ADD_CHECKPOINT(1900, "c9fde91a2179ba1df79c666b540f25b95274f79f82e04337589aff69c53a93fa");
+    ADD_CHECKPOINT(2000, "e1a2949d99186229bf8dbc7616179b9f27356338e36ad05945336425544381fc");
+    ADD_CHECKPOINT(2100, "bd096a455e38349436a7a427564170f8663c2d3cae061c3ef3f25430a02e1ea6");
+    ADD_CHECKPOINT(2200, "dd08225625ae6ed639a7000c5f56e79e0bde01b3e61d9f005ccd8e372231ab3d");
+    ADD_CHECKPOINT(2300, "a53c61df93590660819ff81d187a4a0f51e33a15173f977f32011a2ec0f9ec2c");
+    ADD_CHECKPOINT(2400, "33e65a5574ef7c0dd812952c4caa09bb456b35aab8d238618634e76fab88ae96");
+    ADD_CHECKPOINT(2500, "ac278b919c9b52ffae417fe12f8b8e58a4b5f871b093c8a81ea253920a80658a");
 
 
     return true;
