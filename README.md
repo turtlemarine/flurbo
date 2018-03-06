@@ -68,25 +68,18 @@ that invokes cmake commands as needed.
 cd flurbo
 make
 ```
-    *Optional*: If your machine has several cores and enough memory, enable
-    parallel build by running `make -j<number of threads>` instead of `make`. For
-    this to be worthwhile, the machine should have one core and about 2GB of RAM
-    available per thread.
 
-    *Note*: If cmake can not find zmq.hpp file on OS X, installing `zmq.hpp` from
-    https://github.com/zeromq/cppzmq to `/usr/local/include` should fix that error.
+* The resulting executables can be found in "build/release/bin"
 
-* The resulting executables can be found in `build/release/bin`
+* Add PATH="$PATH:$HOME/flurbo/build/release/bin" to ".profile"
 
-* Add `PATH="$PATH:$HOME/flurbo/build/release/bin"` to `.profile`
-
-* Run Flurbo with `flurbod --detach`
+* Run Flurbo with "flurbod --detach"
 
 * **Optional**: build and run the test suite to verify the binaries:
 ```
 make release-test
 ```
-*NOTE*: `core_tests` test may take a few hours to complete.
+*NOTE*: "core_tests" test may take a few hours to complete.
 
 * **Optional**: to build binaries suitable for debugging:
 ```
@@ -96,7 +89,7 @@ make debug
 ```
 make release-static
 ```
-* **Optional**: build documentation in `doc/html` (omit `HAVE_DOT=YES` if `graphviz` is not installed):
+* **Optional**: build documentation in "doc/html" (omit "HAVE_DOT=YES" if "graphviz" is not installed):
 ```
 HAVE_DOT=YES doxygen Doxyfile
 ```
@@ -117,7 +110,7 @@ application.
 pacman -Syuu  
 ```
 * Exit the MSYS shell using Alt+F4  
-* Edit the properties for the `MSYS2 Shell` shortcut changing "msys2_shell.bat" to "msys2_shell.cmd -mingw64" for 64-bit builds or "msys2_shell.cmd -mingw32" for 32-bit builds
+* Edit the properties for the "MSYS2 Shell" shortcut changing "msys2_shell.bat" to "msys2_shell.cmd -mingw64" for 64-bit builds or "msys2_shell.cmd -mingw32" for 32-bit builds
 * Restart MSYS shell via modified shortcut and update packages again using pacman:  
 ```
 pacman -Syuu  
@@ -131,8 +124,8 @@ To build for 32-bit Windows:
 ```
 pacman -S mingw-w64-i686-toolchain make mingw-w64-i686-cmake mingw-w64-i686-boost mingw-w64-i686-openssl mingw-w64-i686-zeromq mingw-w64-i686-libsodium
 ```
-* Open the MingW shell via `MinGW-w64-Win64 Shell` shortcut on 64-bit Windows
-  or `MinGW-w64-Win64 Shell` shortcut on 32-bit Windows. Note that if you are
+* Open the MingW shell via "MinGW-w64-Win64 Shell" shortcut on 64-bit Windows
+  or "MinGW-w64-Win64 Shell" shortcut on 32-bit Windows. Note that if you are
   running 64-bit Windows, you will have both 64-bit and 32-bit MinGW shells.
 
 **Building**
@@ -145,7 +138,7 @@ make release-static-win64
 ```
 make release-static-win32
 ```
-* The resulting executables can be found in `build/release/bin`
+* The resulting executables can be found in "build/release/bin"
 
 ### Building portable statically linked binaries
 
@@ -163,26 +156,26 @@ make release-static-win32 - builds binaries on 64-bit or 32-bit Windows portable
 
 ## Running flurbod
 
-The build places the binary in `bin/` sub-directory within the build directory
+The build places the binary in "bin/" sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 ```
 ./bin/flurbod
 ```
-To list all available options, run `./bin/flurbod --help`.  Options can be
+To list all available options, run "./bin/flurbod --help".  Options can be
 specified either on the command line or in a configuration file passed by the
-`--config-file` argument.  To specify an option in the configuration file, add
-a line with the syntax `argumentname=value`, where `argumentname` is the name
-of the argument without the leading dashes, for example `log-level=1`.
+"--config-file" argument.  To specify an option in the configuration file, add
+a line with the syntax "argumentname=value", where "argumentname" is the name
+of the argument without the leading dashes, for example "log-level=1".
 
 To run in background:
 ```
 ./bin/flurbod --log-file flurbod.log --detach
 ```
 To run as a systemd service, copy
-[flurbod.service](utils/systemd/flurbod.service) to `/etc/systemd/system/` and
-[flurbod.conf](utils/conf/flurbod.conf) to `/etc/`. The [example
-service](utils/systemd/flurbod.service) assumes that the user `flurbo` exists
+[flurbod.service](utils/systemd/flurbod.service) to "/etc/systemd/system/" and
+[flurbod.conf](utils/conf/flurbod.conf) to "/etc/". The [example
+service](utils/systemd/flurbod.service) assumes that the user "flurbo" exists
 and its home is the data directory specified in the [example
 config](utils/conf/flurbod.conf).
 
