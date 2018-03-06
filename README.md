@@ -17,19 +17,21 @@ Everyone want's extend life of "Rick and Morty" show for as long as possible and
 
 You can download Linux or Windows binaries of "**Flurbo Wallet**" CLI or GUI from [Flurbo Download Page](http://flurbo.cc/#download) and that's why I always say "Shumshumschilpiddydah!".
 
-# Supporting the project
+### Supporting the project
 
-Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. All funds received will go to promote Flurbo and it's exchange rate. Bitcoin donations can be made to **http://flurbo.cc/#donate**.
+Flurbo is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. At now we accept only Bitcoin, so if you want to help "The Flurbo Project" grow - make any donation on next address:
 
-The Bitcoin donation address is: `3JxwkWq4uP7CaLXUDqwRwtj1kkKfxcXzF6`
+### `BTC: 3JxwkWq4uP7CaLXUDqwRwtj1kkKfxcXzF6`
 
-## License
-
-See [LICENSE](LICENSE).
+All funds received will go to promote Flurbo, it's exchange rate and to pay all of necessary things. If you make decision to send donation please write message to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) and you will be rewarded!
 
 ## Contributing
 
 If you want to help out or maybe became a part of Flurbo developers, write to [@iMrPoopybutthole](https://t.me/iMrPoopybutthole) for a set of guidelines.
+
+## License
+
+See [LICENSE](LICENSE).
 
 # Compiling Flurbo from source
 
