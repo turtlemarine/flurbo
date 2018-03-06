@@ -65,8 +65,8 @@ that invokes cmake commands as needed.
 * Install the dependencies
 * Change to the root of the source code directory and build:
 ```
-        cd flurbo
-        make
+cd flurbo
+make
 ```
     *Optional*: If your machine has several cores and enough memory, enable
     parallel build by running `make -j<number of threads>` instead of `make`. For
@@ -84,21 +84,21 @@ that invokes cmake commands as needed.
 
 * **Optional**: build and run the test suite to verify the binaries:
 ```
-        make release-test
+make release-test
 ```
-    *NOTE*: `core_tests` test may take a few hours to complete.
+*NOTE*: `core_tests` test may take a few hours to complete.
 
 * **Optional**: to build binaries suitable for debugging:
 ```
-         make debug
+make debug
 ```
 * **Optional**: to build statically-linked binaries:
 ```
-         make release-static
+make release-static
 ```
 * **Optional**: build documentation in `doc/html` (omit `HAVE_DOT=YES` if `graphviz` is not installed):
 ```
-        HAVE_DOT=YES doxygen Doxyfile
+HAVE_DOT=YES doxygen Doxyfile
 ```
 #### On Windows:
 
@@ -114,24 +114,22 @@ application.
 * Open the MSYS shell via the `MSYS2 Shell` shortcut
 * Update packages using pacman:  
 ```
-        pacman -Syuu  
+pacman -Syuu  
 ```
 * Exit the MSYS shell using Alt+F4  
 * Edit the properties for the `MSYS2 Shell` shortcut changing "msys2_shell.bat" to "msys2_shell.cmd -mingw64" for 64-bit builds or "msys2_shell.cmd -mingw32" for 32-bit builds
 * Restart MSYS shell via modified shortcut and update packages again using pacman:  
 ```
-        pacman -Syuu  
+pacman -Syuu  
 ```
-
 * Install dependencies:
+  To build for 64-bit Windows:
 ```
-    To build for 64-bit Windows:
+pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium
 ```
-        pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium
+To build for 32-bit Windows:
 ```
-    To build for 32-bit Windows:
-```
-        pacman -S mingw-w64-i686-toolchain make mingw-w64-i686-cmake mingw-w64-i686-boost mingw-w64-i686-openssl mingw-w64-i686-zeromq mingw-w64-i686-libsodium
+pacman -S mingw-w64-i686-toolchain make mingw-w64-i686-cmake mingw-w64-i686-boost mingw-w64-i686-openssl mingw-w64-i686-zeromq mingw-w64-i686-libsodium
 ```
 * Open the MingW shell via `MinGW-w64-Win64 Shell` shortcut on 64-bit Windows
   or `MinGW-w64-Win64 Shell` shortcut on 32-bit Windows. Note that if you are
@@ -141,11 +139,11 @@ application.
 
 * If you are on a 64-bit system, run:
 ```
-        make release-static-win64
+make release-static-win64
 ```
 * If you are on a 32-bit system, run:
 ```
-        make release-static-win32
+make release-static-win32
 ```
 * The resulting executables can be found in `build/release/bin`
 
@@ -153,13 +151,15 @@ application.
 
 By default, in either dynamically or statically linked builds, binaries target the specific host processor on which the build happens and are not portable to other processors. Portable binaries can be built using the following targets:
 
-* ```make release-static-linux-x86_64``` builds binaries on Linux on x86_64 portable across POSIX systems on x86_64 processors
-* ```make release-static-linux-i686``` builds binaries on Linux on x86_64 or i686 portable across POSIX systems on i686 processors
-* ```make release-static-linux-armv8``` builds binaries on Linux portable across POSIX systems on armv8 processors
-* ```make release-static-linux-armv7``` builds binaries on Linux portable across POSIX systems on armv7 processors
-* ```make release-static-linux-armv6``` builds binaries on Linux portable across POSIX systems on armv6 processors
-* ```make release-static-win64``` builds binaries on 64-bit Windows portable across 64-bit Windows systems
-* ```make release-static-win32``` builds binaries on 64-bit or 32-bit Windows portable across 32-bit Windows systems
+```
+make release-static-linux-x86_64 - builds binaries on Linux on x86_64 portable across POSIX systems on x86_64 processors
+make release-static-linux-i686 - builds binaries on Linux on x86_64 or i686 portable across POSIX systems on i686 processors
+make release-static-linux-armv8 - builds binaries on Linux portable across POSIX systems on armv8 processors
+make release-static-linux-armv7 - builds binaries on Linux portable across POSIX systems on armv7 processors
+make release-static-linux-armv6 - builds binaries on Linux portable across POSIX systems on armv6 processors
+make release-static-win64 - builds binaries on 64-bit Windows portable across 64-bit Windows systems
+make release-static-win32 - builds binaries on 64-bit or 32-bit Windows portable across 32-bit Windows systems
+```
 
 ## Running flurbod
 
@@ -167,7 +167,7 @@ The build places the binary in `bin/` sub-directory within the build directory
 from which cmake was invoked (repository root by default). To run in
 foreground:
 ```
-    ./bin/flurbod
+./bin/flurbod
 ```
 To list all available options, run `./bin/flurbod --help`.  Options can be
 specified either on the command line or in a configuration file passed by the
@@ -177,7 +177,7 @@ of the argument without the leading dashes, for example `log-level=1`.
 
 To run in background:
 ```
-    ./bin/flurbod --log-file flurbod.log --detach
+./bin/flurbod --log-file flurbod.log --detach
 ```
 To run as a systemd service, copy
 [flurbod.service](utils/systemd/flurbod.service) to `/etc/systemd/system/` and
