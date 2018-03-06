@@ -1,6 +1,6 @@
 #define DEF_FLURBO_VERSION_TAG "@VERSIONTAG@"
-#define DEF_FLURBO_VERSION "0.11.1.0-master"
-#define DEF_FLURBO_RELEASE_NAME "Helium Hydra"
+#define DEF_FLURBO_VERSION "0.0.0.1"
+#define DEF_FLURBO_RELEASE_NAME "Wubba Lubba Dub Dub"
 #define DEF_FLURBO_VERSION_FULL DEF_FLURBO_VERSION "-" DEF_FLURBO_VERSION_TAG
 
 #include "version.h"

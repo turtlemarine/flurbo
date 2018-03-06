@@ -1,4 +1,18 @@
-// Copyright (c) 2014-2018, The Flurbo Project
+// Get last updates on http://flurbo.cc
+//             ___ _  _ ____
+//              |  |--| |===                      
+//  _____ __    _____ _____ _____ _____
+// |   __|  |  |  |  | __  | __  |     |
+// |   __|  |__|  |  |    -| __ -|  |  |
+// |__|  |_____|_____|__|__|_____|_____|
+//   ___  ____ ____    _ ____ ____ ___
+//   |--' |--< [__] ___| |=== |___  | 
+//
+// Based on "The Monero Project" and "Cryptonote Protocol".
+//
+// Copyright (c) 2018-.... The Flurbo developers.
+// Copyright (c) 2014-2018 The Monero developers.
+// Copyright (c) 2012-2013 The Cryptonote developers.
 //
 // All rights reserved.
 //

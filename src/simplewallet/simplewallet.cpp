@@ -1,4 +1,18 @@
-// Copyright (c) 2014-2018, The Flurbo Project
+// Get last updates on http://flurbo.cc
+//             ___ _  _ ____
+//              |  |--| |===                      
+//  _____ __    _____ _____ _____ _____
+// |   __|  |  |  |  | __  | __  |     |
+// |   __|  |__|  |  |    -| __ -|  |  |
+// |__|  |_____|_____|__|__|_____|_____|
+//   ___  ____ ____    _ ____ ____ ___
+//   |--' |--< [__] ___| |=== |___  | 
+//
+// Based on "The Monero Project" and "Cryptonote Protocol".
+//
+// Copyright (c) 2018-.... The Flurbo developers.
+// Copyright (c) 2014-2018 The Monero developers.
+// Copyright (c) 2012-2013 The Cryptonote developers.
 //
 // All rights reserved.
 //
@@ -25,8 +39,7 @@
 // INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
 // STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
 // THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-//
-// Parts of this file are originally copyright (c) 2012-2013 The Cryptonote developers
+
 
 /*!
  * \file simplewallet.cpp
@@ -3769,7 +3782,7 @@ bool simple_wallet::transfer_main(int transfer_type, const std::vector<std::stri
     }
     if (locked_blocks > 1000000)
     {
-      fail_msg_writer() << tr("Locked blocks too high, max 1000000 (˜4 yrs)");
+      fail_msg_writer() << tr("Locked blocks too high, max 1000000 (??4 yrs)");
       return true;
     }
     local_args.pop_back();
