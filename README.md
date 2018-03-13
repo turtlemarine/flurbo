@@ -6,6 +6,7 @@ Flurbo is the first private open-source intergalactic decentralized anonymous fr
 - [Our Website](http://flurbo.cc)
 - [Our Mining Pool](http://flurbo.cc/pool#)
 - [Twitter](https://twitter.com/GetFlurbo)
+- [Discord](https://discord.gg/D4RqCw3)
 - [Telegram Group](https://t.me/flurbotalk)
 - [Telegram Channel](https://t.me/flurbo)
 
