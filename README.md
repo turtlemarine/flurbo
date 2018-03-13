@@ -2,7 +2,7 @@
 
 Flurbo is the first private open-source intergalactic decentralized anonymous free crypto currency based on CryptoNote that is used by more than 84 alien species to easily send money online throughout the galaxy and all dimensions. Wubba Lubba Dub Dub!
 
-- [Bitcointalk](https://bitcointalk.org)
+- [Bitcointalk](https://bitcointalk.org/index.php?topic=3119326.msg32241480)
 - [Our Website](http://flurbo.cc)
 - [Our Mining Pool](http://flurbo.cc/pool#)
 - [Twitter](https://twitter.com/GetFlurbo)
