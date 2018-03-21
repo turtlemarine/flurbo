@@ -12,7 +12,7 @@ Flurbo is the first private open-source intergalactic decentralized anonymous fr
 
 # Mission
 
-Everyone want's extend life of **"Rick and Morty"** show for as long as possible and everyone want's see as much as possible seasons of it, as sooner as possible! We have a plan. The first step we take on ourselves, we created Flurbo currency and we will send a donation of **1,000,000,000 FLB** to **Dan Harmon** and **Justin Roiland**. The second and most important step is entirely up to you. You ask how can you help? Just become a part of the Flurbo community and help it's grow! Let's make Flurbo great! Rikki-Tikki-Tavi, Bitch! Remember, it's all up to you and that's the waaaayyy the news goes! AIDS!
+Everyone wants to extend the life of **Rick and Morty** for as long as possible, and everyone wants to see new seasons as soon as possible! We have a plan. The first step that we have taken upon ourselves is to create the **Flurbo** currency and send a **1,000,000,000 FLB** donation to **Dan Harmon** and **Justin Roiland**. The second and most important step is entirely up to you. "How can I help?" you ask? Just become a part of the **Flurbo community** and help it grow! Let's make Flurbo great! Rikki-tikki-tavi, bitch! Remember, it's all up to you and that's the waaaayyy the news goes! AIDS!
 
 # How to start use Flurbo?
 
